@@ -1,3 +1,4 @@
 - ## Getting Started
+    - [Introduction](/docs/{{version}}/introduction)
     - [Installation](/docs/{{version}}/installation)
     - [Configuration](/docs/{{version}}/configuration)
