@@ -1,9 +1,5 @@
 # Introduction
 
-
-
-
-
 ## [What is Frisk](#about)
 Frisk is an affordable and self-hosted Laravel error tracking solution. It's main advantage over third-parties solutions is the privacy you will gain from self-hosting our provided app with unlimited everything. 
 

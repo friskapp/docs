@@ -1,0 +1,6 @@
+# Install Frisk USING A Start-Up Script
+
+You can install Frisk easily on DigitalOcean or Vultr using a start up script that we made ... 
+
+## How to
+coming soon ...
