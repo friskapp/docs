@@ -2,7 +2,7 @@
 
 Frisk has the same requirements as [Laravel](https://laravel.com/docs/master#server-requirements) which is basically a server with PHP 7.3+ and MySQL installed.
 
-## PHP
+## [PHP](#php)
 - php-mcrypt
 - php-bcmath
 - php-ctype (enabled by default unless disabled at compile time)
@@ -13,8 +13,8 @@ Frisk has the same requirements as [Laravel](https://laravel.com/docs/master#ser
 - php-openssl (enabled by default unless disabled at compile time)
 - php-pdo (enabled by default unless disabled at compile time)
 
-## MySQL 
-We have tested Frisk on version 5.7 and 8.0, so it's your choice but we recommend using latest version.
+## [MySQL](#mysql)
+We have tested Frisk on MySQL 5.7 and MySQL 8.0, so it's your choice but we recommend using latest version.
  
- ## Server
- You can any server platform but we recommend using Nginx.
+ ## [Server](#server)
+ You can use any server platform but we recommend using Nginx. ([Laravel server configuration](https://laravel.com/docs/master#web-server-configuration))
