@@ -7,9 +7,12 @@ To use Frisk you have to own a license key, and that's easy:
 
 ## [The Difference between Frisk Solo and Pro](#difference-between-frisk-solo-and-pro)
 When we did the pricing of our product we thought we should help those who still in their beginnings and in their way to success and don't make much money from their work yet. So we decided to make two models of pricing; Solo for those who makes less money and Pro for those who makes more money from their works.
-
-
-Pro also comes with Email support, it may not be a quick-response support but still can be very useful for teams and businesses.
+<br>
+<br>
+In other words, if you are a team that **makes more than $3k a month then your obliged ethically to choose Frisk Pro**.
+<br>
+<br>
+Frisk Pro also comes with Email support, it may not be a quick-response support but still can be very useful for teams and businesses.
 
 ## [The license In details](#license-in-details)
 - The license gives you **permission to use Frisk** (downloading, installing using Composer).
