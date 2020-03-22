@@ -1,4 +1,4 @@
-- ## Project setup
+# Laravel Integration
 
 to connect a project your frisk website you need to configure your project with flare
 

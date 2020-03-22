@@ -9,5 +9,10 @@
     - [Startup Script Installation](/docs/{{version}}/startup-script)
     - [Upgrading Frisk](/docs/{{version}}/upgrading)
 
+- ## Integrations
+    - [Integrate with Laravel](/docs/{{version}}/laravel-integration)
+    - [Integrate with Javascript](/docs/{{version}}/javascript-integration)
+    - [Integrate with generic PHP](/docs/{{version}}/javascript-integration)
+
 - ## Configuration
     - [Configuration](/docs/{{version}}/configuration)
