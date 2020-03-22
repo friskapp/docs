@@ -1,18 +1,68 @@
 # Laravel Integration
 
-to connect a project your frisk website you need to configure your project with flare
+In order to receive errors from a Laravel project, you must have Ignition as a composer's dependency
 
-[Flare install](https://flareapp.io/docs/ignition-for-laravel/installation)
+    composer require facade/ignition
 
-make sure you publish flare config :
+Frisk uses Ignition ability to send errors to online third parties services (like Frisk), to make Ignition knows 
+that you are sending errors to Frisk, publish the config file: 
 
-`'base_url' => env('FRISK_URL'),`
+    php artisan vendor:publish --provider="Facade\Ignition\IgnitionServiceProvider" --tag="flare-config"
 
-in your env
+This will publish a file in `config/flare.php`, open it and add this in the end of file just before `];`
 
-`FLARE_KEY=your-project-api-key
-FRISK_URL=https://your-frisk-website.com/api`
+    'base_url' => env('FRISK_URL'),
 
-to test :
+Then open `.env` file and add:
 
-`php artisan flare:test`
+    FLARE_KEY=your-project-api-key
+    FRISK_URL=https://your-frisk-website.com/api
+
+> {note} You can get FLARE_KEY from Frisk's project settings/API page.
+
+
+
+## [Extra steps for Laravel 5.8 and below](#frisk-intergration-laravel-5.8-and-below)
+
+You may need to change file `app/Exceptions/Handler.php` for Laravel versions 5.5 to 5.8, and add this method:
+
+    protected function whoopsHandler()
+    {
+        try {
+            return app(\Whoops\Handler\HandlerInterface::class);
+        } catch (\Illuminate\Contracts\Container\BindingResolutionException $e) {
+            return parent::whoopsHandler();
+        }
+    }
+
+> {warning} you may also need to remove package `filp/whoops` from you composer to avoid any conflicts.
+
+## [Change logging channel to send errors to Frisk API](#frisk-logging-channels)
+You need to modify `config/logging.php` to let Laravel send to third parties API (like Frisk). Open the file then add a new channel in `channels` array:
+
+    'channels' => [
+            'frisk' => [
+                'driver' => 'flare',
+            ],
+        
+Then you can add `frisk` channel to any channel you are using, let's say you are using `stack`, you add the newly created channel to its channel like this:
+
+    'channels' => [
+        //this is our new channel
+        'frisk' => [
+            'driver' => 'flare',
+        ],
+
+        'stack' => [
+            'driver' => 'stack',
+            'channels' => ['daily', 'frisk'], // <-- you can see here we added frisk to its channels
+            'ignore_exceptions' => false,
+        ],
+
+If you are using `vapor`, just do the same and add `frisk` to `vapor` channels.
+
+## [Test the integration](#test-integration)
+After you complete all these simple steps and you want to test the integration with your Frisk app, run this from your command line inside your Laravel project:
+
+    php artisan flare:test
+    
