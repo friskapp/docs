@@ -36,3 +36,17 @@ To send extra information about an error context use group with key:context, suc
     $frisk->group('context', [
         'key1' => 'value1',
     ]);
+
+To intercept all your errors, and modify you them before being sent to Frisk API, use:
+
+    $frisk->registerMiddleware(function (\Facade\FlareClient\Report $report, $next) {
+        // Add custom information to the report
+        $report->context('key', 'value');
+
+        //or even delete something
+	    $context = $report->allContext();
+	    $context['session'] = null;
+        $report->userProvidedContext($context);
+
+        return $next($report);
+    });
