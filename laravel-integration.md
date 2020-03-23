@@ -43,8 +43,9 @@ You need to modify `config/logging.php` to let Laravel send to third parties API
     'channels' => [
             'frisk' => [
                 'driver' => 'flare',
+                //'level' => 'critical',
             ],
-        
+
 Then you can add `frisk` channel to any channel you are using, let's say you are using `stack`, you add the newly created channel to its channel like this:
 
     'channels' => [
@@ -66,3 +67,30 @@ After you complete all these simple steps and you want to test the integration w
 
     php artisan flare:test
     
+## [Customize sent errors](#customize-sent-error)
+In `config/flare.php` you can add and modify as needed:
+
+    'reporting' => [
+        'anonymize_ips' => true,
+        'collect_git_information' => true,
+        'report_queries' => true,
+        'maximum_number_of_collected_queries' => 200,
+        'report_query_bindings' => true,
+        'report_view_data' => true,
+        'grouping_type' => \Facade\FlareClient\Enums\GroupingTypes::EXCEPTION,
+        //or by
+        //'grouping_type' => \Facade\FlareClient\Enums\GroupingTypes::TOP_FRAME,
+    ],
+
+also you can change what information about use can be sent from User model:
+
+    class User extends Model {
+        //...
+        public function toFlare(): array {
+            // Only `id` will be sent to Flare.
+            return [
+                'id' => $this->id
+            ];
+        }
+    }
+
