@@ -14,5 +14,7 @@
     - [Integrate with generic PHP](/docs/{{version}}/generic-php-integration)
     - [Integrate with Javascript](/docs/{{version}}/javascript-integration)
 
-- ## Configuration
-    - [Configuration](/docs/{{version}}/after-installing-frisk)
+- ## After Installation
+    - [First time configurations](/docs/{{version}}/after-installing-frisk)
+    - [Creating Projects](/docs/{{version}}/projects)
+
