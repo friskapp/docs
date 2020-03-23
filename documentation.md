@@ -15,4 +15,4 @@
     - [Integrate with Javascript](/docs/{{version}}/javascript-integration)
 
 - ## Configuration
-    - [Configuration](/docs/{{version}}/configuration)
+    - [Configuration](/docs/{{version}}/after-installing-frisk)
