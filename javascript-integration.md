@@ -9,6 +9,19 @@ or if you prefer yarn
     yarn add @flareapp/flare-client
 
 
+then 
+
+    import { flare } from "@flareapp/flare-client";
+
+    // only run in production
+    if (process.env.NODE_ENV === 'production') {
+        flare.config.reportingUrl = 'https://firsk-app-url.com/api/reports';
+        flare.light('frisk-project-key');
+    }
+
+> {note} You can get frisk-project-key from Frisk's project settings/API page.
+
+
 ## [Usage Notes](#usage-notes)
 - To test the integration from your browser console, run: `flare.test()`
 - You can use `flare.beforeEvaluate(error)` or `flare.beforeEvaluate(error)` to stop or edit errors before sending. 

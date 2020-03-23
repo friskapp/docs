@@ -9,7 +9,7 @@ So to start catching errors, add the dependency using composer:
 Then add this code to report all unhandled errors and exception
 
     $frisk = (new Facade\FlareClient\Flare(new \Facade\FlareClient\Http\Client(
-            'FRISK-API-KEY',
+            'frisk-project-key',
             null,
             'https://your-frisk-app-url.com/api'
         )))
@@ -19,7 +19,7 @@ Then add this code to report all unhandled errors and exception
         //->anonymizeIp()
         ;
     
-> {note} You can get FRISK-API-KEY from Frisk's project settings/API page.
+> {note} You can get frisk-project-key from Frisk's project settings/API page.
 
 ## [Send custom and detailed information](#send-extra-information)
 
