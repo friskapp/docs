@@ -28,7 +28,7 @@ To send more information about users, use group with key:user such as:
     $frisk->group('user', [
         'email' => $user->email, //$user depends on your app structure
         'name' => $user->name,
-        'additional_information' => $user->additional,
+        'extra_information' => '...',
     ]);
 
 To send extra information about an error context use group with key:context, such as 
@@ -41,7 +41,7 @@ To intercept all your errors, and modify you them before being sent to Frisk API
 
     $frisk->registerMiddleware(function (\Facade\FlareClient\Report $report, $next) {
         // Add custom information to the report
-        $report->context('key', 'value');
+        $report->context('key1', 'value1');
 
         //or even delete something
 	    $context = $report->allContext();
