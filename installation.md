@@ -30,4 +30,4 @@ Now that you edited the database information in your `.env`, you can run the com
     php artisan migrate
 
 
- You can head to [After installation](./after-installing-frisk) page to configure Frisk after you installing it.
+ You can head to [After installation](./after-installing-frisk) page to configure Frisk after installing it.
