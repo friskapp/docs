@@ -1,6 +1,7 @@
 # After Installing Frisk
 
-### Creating an Admin 
+ <a name="creating-admin-account"></a>
+### [Creating an Admin](#creating-admin-account)
 After installing Frisk, you can create an admin account using the command:
 
     php artisan frisk:admin --email=your@email.com
@@ -10,7 +11,8 @@ This will create an account and save it to the database and add it to FriskServi
 
 > {note} You can provide `--password=` option too ...
 
-### Start receiving errors
+ <a name="receiving-errors"></a>
+### [Start receiving errors](#receiving-errors)
 > {warning} Assuming that you did the following steps, if not go back to [Installation](/installation) page:
 <br> ✔️ Installed Frisk (and the database).
 <br> ✔️ Created an admin account.
@@ -20,7 +22,8 @@ This will create an account and save it to the database and add it to FriskServi
 
 Now you need to integrate Frisk with your website to receive errors, head to [Integration with Laravel](/laravel-integration) if you website is built using Laravel or  [Integration with any generic PHP website](/generic-php-integration) or [Javascript Integration](/javascript-integration) for Javascript websites.
 
-### Configure email notifications
+ <a name="mail-configurations"></a>
+### [Configure mail notifications](#mail-configurations)
 In order to send emails from Frisk app you need to set the email settings in `.env` file
 
     MAIL_MAILER=smtp #or `sendmail`, `ses` or `mailgun`

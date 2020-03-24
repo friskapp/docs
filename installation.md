@@ -1,6 +1,6 @@
 # Installation
 
-
+ <a name="download-frisk-app"></a>
 ## [Download the app](#download-frisk-app)
 Frisk Uses [Composer](https://getcomposer.org) to manage its code & dependencies. So, make sure you have Composer installed on your machine.
 
@@ -12,6 +12,7 @@ After executing the command **it will asks you for a username and a password**, 
 
 > {note} Username:  Your email address that you used to create an account in this website. Password: The licence code you purchased. 
 
+ <a name="configurations"></a>
 ## [Configurations](#configurations)
 Change the values in `.env` file found in the root folder to right information.
 
@@ -23,6 +24,7 @@ Change the values in `.env` file found in the root folder to right information.
     DB_PASSWORD=password-of-your-database
 
 
+ <a name="database-installation"></a>
 ## [Database Installation](#database-installation)
 Now that you edited the database information in your `.env`, you can run the command:
 

@@ -21,7 +21,7 @@ then
 
 > {note} You can get frisk-project-key from Frisk's project settings/API page.
 
-
+ <a name="usage-notes"></a>
 ## [Usage Notes](#usage-notes)
 - To test the integration from your browser console, run: `flare.test()`
 - You can use `flare.beforeEvaluate(error)` to stop evaluating errors (return a Promise). 

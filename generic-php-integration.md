@@ -21,6 +21,7 @@ Then add this code to report all unhandled errors and exception
     
 > {note} You can get frisk-project-key from Frisk's project settings/API page.
 
+ <a name="send-extra-information"></a>
 ## [Send custom and detailed information](#send-extra-information)
 
 To send more information about users, use group with key:user such as: 
