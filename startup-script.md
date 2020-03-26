@@ -9,11 +9,15 @@ It's a setup file that is written to install and configure a server without the 
  <a name="how-to-use-it-with-digital-ocean"></a>
 ## [How to use it with DigitalOcean](#how-to-use-it-with-digital-ocean)
 - Create new droplet
+![do-1](/images/docs/do-startup-script-1.png)
 - Select image: Ubuntu 18.04 or any new LTS version.
+![do-1](/images/docs/do-startup-script-2.png)
 - From available settings: check "Enable User Data"
+![do-1](/images/docs/do-startup-script-3.png)
 - Paste the generated script you got from [frisk.app/setup](/setup) into User Data field then save it.
+![do-1](/images/docs/do-startup-script-4.png)
 - Lastly Create your droplet.
-F
+![do-1](/images/docs/do-startup-script-5.png)
 
  <a name="how-to-use-it-vultr"></a>
 ## [How to use it with Vultr](#how-to-use-it-with-vultr)
