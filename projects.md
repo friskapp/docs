@@ -1,9 +1,30 @@
-# Creating first project
+# Frisk Projects
+
+ <a name="what-a-project"></a>
+## [What's a project in Frisk?](#what-a-project)
+A project in Frisk can be created to track errors of one website/app. A project is like a folder that contains all errors of a website and you can assign specific members to access and manage them. 
 
  <a name="creating-project"></a>
-### [Creating a project](#creating-admin-account)
-In Frisk projects are only created by admins to create one you must be an admin,
- login in then click on your name "Admin" then choose create a project
+## [Creating a project](#creating-admin-account)
+In order to create a project in your Frisk App you have to be an **admin** ([see: how to create an admin account](./after-installing-frisk#creating-admin-account));
+then from the top menu select "Create A Project".
+
+> {note} Make sure to add the correct domain/domains of your tracked website, this is very important for CORS protection.
+
+ <a name="project-members"></a>
+## [Project members](#project-members)
 
 
-> {note} You can add multiple domains after project creation by simply editing the project settings and add the domains you want for cors protection this is important for javascript integration 
+ <a name="project-notifications"></a>
+## [Project notifications](#project-notifications)
+
+ <a name="project-shares"></a>
+## [Project shares](#project-shares)
+
+
+ <a name="project-flood-control"></a>
+## [Project flood control](#project-flood-control)
+
+
+ <a name="project-api-key"></a>
+## [Project api key](#project-api-key)
