@@ -20,7 +20,7 @@ This will create an account and save it to the database and add it to FriskServi
 <br> ✔️ You copied the API key from the project settings.
 
 
-Now you need to integrate Frisk with your website to receive errors, head to [Integration with Laravel](/laravel-integration) if you website is built using Laravel or  [Integration with any generic PHP website](/generic-php-integration) or [Javascript Integration](/javascript-integration) for Javascript websites.
+Now you need to integrate Frisk with your website to receive errors, head to [Integration with Laravel](/laravel-integration) if your website is built using Laravel or  [Integration with any generic PHP website](/generic-php-integration) or [Javascript Integration](/javascript-integration) for Javascript websites.
 
  <a name="mail-configurations"></a>
 ### [Configure mail notifications](#mail-configurations)
