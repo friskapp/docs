@@ -10,21 +10,3 @@ In order to create a project in your Frisk App you have to be an **admin** ([see
 then from the top menu select "Create A Project".
 
 > {note} Make sure to add the correct domain/domains of your tracked website, this is very important for CORS protection.
-
- <a name="project-members"></a>
-## [Project members](#project-members)
-
-
- <a name="project-notifications"></a>
-## [Project notifications](#project-notifications)
-
- <a name="project-shares"></a>
-## [Project shares](#project-shares)
-
-
- <a name="project-flood-control"></a>
-## [Project flood control](#project-flood-control)
-
-
- <a name="project-api-key"></a>
-## [Project api key](#project-api-key)
