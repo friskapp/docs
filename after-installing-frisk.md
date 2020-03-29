@@ -46,7 +46,7 @@ In order to send emails from Frisk app you need to set the email settings in `.e
     MAIL_USERNAME=null
     MAIL_PASSWORD=null
     MAIL_ENCRYPTION=null
-    MAIL_FROM_ADDRESS=null
+    MAIL_FROM_ADDRESS=website@your-website-domain.com
     MAIL_FROM_NAME="${APP_NAME}"
 
 Check out [Laravel mail configuration docs](https://laravel.com/docs/7.x/mail#configuration) for more information.
