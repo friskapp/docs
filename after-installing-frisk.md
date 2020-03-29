@@ -2,14 +2,28 @@
 
  <a name="creating-admin-account"></a>
 ### [Creating an Admin](#creating-admin-account)
+
 After installing Frisk, you can create an admin account using the command:
 
     php artisan frisk:admin --email=your@email.com
 
 This will create an account and save it to the database and add it to FriskServiceProvider as an admin.
-
+if account is already existed it will be added only to FriskServiceProvider as an Admin
 
 > {note} You can provide `--password=` option too ...
+
+### [FriskServiceProvider Gate Customization](#gate-customize)
+
+Assuming you already probably installed Frisk and published the necessarily files (see [Installation](./installation#database-installation) for detailed information).
+You can add emails manually or change the gate code by modifying ``FriskServiceProvider@gate`` 
+
+```php
+Gate::define('isFriskAdmin', function ($user) {
+    return in_array($user->email, [
+         //any email
+    ]);
+});
+```
 
  <a name="receiving-errors"></a>
 ### [Start receiving errors](#receiving-errors)
