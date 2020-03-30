@@ -26,5 +26,4 @@
 - ## Issues
     - [Issues](/docs/{{version}}/issues)
     - [Sessions](/docs/{{version}}/sessions)
-    - [Sharing Issue](/docs/{{version}}/sharing-issues)
 
