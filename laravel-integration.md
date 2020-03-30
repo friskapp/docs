@@ -42,26 +42,26 @@ You may need to change file `app/Exceptions/Handler.php` for Laravel versions 5.
 You need to modify `config/logging.php` to let Laravel send to third parties API (like Frisk). Open the file then add a new channel in `channels` array:
 
     'channels' => [
-            'frisk' => [
+            'flare' => [
                 'driver' => 'flare',
                 //'level' => 'critical',
             ],
 
-Then you can add `frisk` channel to any channel you are using, let's say you are using `stack`, you add the newly created channel to its channel like this:
+Then you can add `flare` channel to any channel you are using, let's say you are using `stack`, you add the newly created channel to its channel like this:
 
     'channels' => [
         //this is our new channel
-        'frisk' => [
+        'flare' => [
             'driver' => 'flare',
         ],
 
         'stack' => [
             'driver' => 'stack',
-            'channels' => ['daily', 'frisk'], // <-- you can see here we added frisk to its channels
+            'channels' => ['daily', 'flare'], // <-- you can see here we added flare to its channels
             'ignore_exceptions' => false,
         ],
 
-If you are using `vapor`, just do the same and add `frisk` to `vapor` channels.
+If you are using `vapor`, just do the same and add `flare` to `vapor` channels.
 
  <a name="test-integration"></a>
 ## [Test the integration](#test-integration)
