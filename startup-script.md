@@ -2,6 +2,8 @@
 
 You can install Frisk easily on DigitalOcean or Vultr using a start up script that we made ... 
 
+> {note} After installation complete you should change your [mail configurations](./after-installing-frisk#mail-configurations)
+
  <a name="what-startup-script"></a>
 ## [What is startup script](#what-startup-script)
 It's a setup file that is written to install and configure a server without the need to do it manually. We made a wizard that auto-generate a startup script to install Frisk (head to [frisk.app/setup](/setup)) 
