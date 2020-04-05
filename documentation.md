@@ -1,4 +1,4 @@
-- ## Getting Started
+- ## Getting Started 
     - [Introduction](/docs/{{version}}/introduction)
     - [Requirements](/docs/{{version}}/requirements)
     - [Purchasing a License](/docs/{{version}}/license)
