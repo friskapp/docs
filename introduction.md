@@ -10,7 +10,7 @@ Frisk is an affordable and self-hosted Laravel error tracking solution. It's mai
 - Privacy; because your team information and identities are not recorded with thousands of others.
 - Privacy; because code snippets you share are shared by you and hosted by you.
 - Unlimited everything; you don't have to upgrade to a different plan to just add another member to a team! or to get an error that happens a year ago because of the retention limits! you host it .. you control it.
-- Customization Freedom; you can change, edit or add features because you are (and I bet on that) a developer and developers can't use a thing without tinkering with it :).
+- Customization Freedom; you can change, edit or add features because you are (and I bet on that) a developer and developers can't use a thing without tinkering with it.
 
  <a name="integration-with-laravel"></a>
 ## [Integration with Laravel](#integration-with-laravel)
