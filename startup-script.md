@@ -2,7 +2,7 @@
 
 You can install Frisk easily on DigitalOcean or Vultr using a start up script that we made ... 
 
-> {note} After installation complete you should change your [mail configurations](./after-installing-frisk#mail-configurations)
+> {note} After the installation is completed you should change your [mail configurations](./after-installing-frisk#mail-configurations)
 
  <a name="what-startup-script"></a>
 ## [What is startup script](#what-startup-script)
@@ -31,3 +31,5 @@ It's a setup file that is written to install and configure a server without the 
 ![vultr-1](/images/docs/vultr-startup-script-2.png)
 - Lastly deploy your server.
 
+
+> {note} Setup will complete in approximately: 25 minutes
