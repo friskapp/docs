@@ -15,7 +15,7 @@ if account is already existed it will be added only to FriskServiceProvider as a
 ### [FriskServiceProvider Gate Customization](#gate-customize)
 
 Assuming you already installed Frisk and published the necessary files (see [Installation](./installation#database-installation) for detailed information).
-You can add admins (their emails) manually or change the gate code by modifying ``FriskServiceProvider@gate`` 
+You can add admins (their emails) manually or change the gate code by modifying ``FriskServiceProvider@gate`` .
 
 ```php
 Gate::define('isFriskAdmin', function ($user) {
